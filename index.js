@@ -1,9 +1,9 @@
 
-require('./config/db');
+require('./src/config/db');
 
 const express = require("express");
 
-const UserRoutes = require("./routes/user.routes")
+const UserRoutes = require("./src/routes/user.routes")
 
 const app = express();
 
@@ -17,7 +17,6 @@ app.get("/", (res) => {
 })
 
 app.use("/users", UserRoutes)
-
 
 
 app.listen(3000, () => {

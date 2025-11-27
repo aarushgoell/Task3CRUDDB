@@ -75,9 +75,7 @@ const updateUser = async (req, res) => {
 
 const deleteUser = async (req, res) => {
     const userId = req.params.id;
-    console.log(userId);
     const objectId = new mongoose.Types.ObjectId(userId);
-    console.log(objectId);
     try {
         const updatedUser = await User.findByIdAndDelete(objectId);
         console.log(updatedUser);
