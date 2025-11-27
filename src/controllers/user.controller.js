@@ -2,6 +2,8 @@ const { User } = require("../models/user.model");
 const { hashPass } = require("../Service/hashing");
 const { UserSchema } = require("../Validation/userzod");
 
+const mongoose = require("mongoose");
+
 const getUsers = async (req, res) => {
     try {
         const allUsers = await User.find().select({ name: 1, email: 1, _id: 0, createdAt: 1 });

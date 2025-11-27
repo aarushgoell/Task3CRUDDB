@@ -1,3 +1,6 @@
+
+require('./config/db');
+
 const express = require("express");
 
 const UserRoutes = require("./routes/user.routes")
