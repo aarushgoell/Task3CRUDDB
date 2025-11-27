@@ -1,5 +1,5 @@
 
-require('./src/config/db');
+require('./src/database/db');
 
 const express = require("express");
 
@@ -23,3 +23,17 @@ app.listen(3000, () => {
     console.log("Server started");
 })
 
+
+
+
+// {
+//     "message": "New user added",
+//     "newUser": {
+//         "email": "aarushgoel200456@gmail.com",
+//         "name": "aarushgoel",
+//         "password": "$2b$10$WVuiXK4N/IJq7F7sid2MZOQ5YoQ.ag8qh3.MIMa.znyS89pNZL6A2",
+//         "createdAt": "11-27-2025, 2:21:20 pm",
+//         "_id": "692811962635b0d3cb13d9e9",
+//         "__v": 0
+//     }
+// }
